@@ -9,9 +9,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
+        background: "linear-gradient(180.00deg, rgba(14, 19, 23, 0) -42.448%,rgb(14, 19, 23) 94.994%)",
         foreground: "var(--foreground)",
       },
+      fontFamily:{
+        balestya:['var(--font-balestya)'],
+        abrilfatface:['var(--font-abrilfatface)'],
+        gilroy:['var(--font-gilroy)']
+      }
     },
   },
   plugins: [],
