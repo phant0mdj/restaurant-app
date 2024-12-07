@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-hover {
+  @apply border-2 border-gray-500 text-gray-500 hover:scale-110 hover:border-[rgb(243,156,18)] hover:text-[rgb(243,156,18)] transition-transform duration-300 ease-in-out;
+}
 *{
   padding: 0;
   margin: 0;
@@ -21,7 +24,7 @@ header{
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.4px;
-  text-align: left;
+  text-align: center;
 }
 
 .main_content h2{
@@ -46,5 +49,27 @@ header{
   font-size: 22px;
   font-weight: 400;
   letter-spacing: 0.6px;
+  text-align: left;
+}
+
+
+.burger_menu{
+  background: rgb(35, 43, 53);
+}
+
+.mail{
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: -1px;
+  letter-spacing: 0.6px;
+}
+
+.nav Link{
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0.2px;
   text-align: left;
 }

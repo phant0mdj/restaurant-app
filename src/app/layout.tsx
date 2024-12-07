@@ -1,7 +1,6 @@
 import "@/app/globals.css";
 import localFont from "next/font/local";
 import { Abril_Fatface } from 'next/font/google';
-import Header from "@/app/Components/Header";
 const abrilFatface = Abril_Fatface({
     weight: "400",
     variable: '--font-abrilfatface',
@@ -33,7 +32,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${balestya.variable} ${gilroy.variable} ${abrilFatface.className}`}>
       <body>
-        <Header/>
         {children}
       </body>
     </html>
