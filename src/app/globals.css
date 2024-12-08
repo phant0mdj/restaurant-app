@@ -19,7 +19,7 @@ header{
 
 
 
-.header_content a{
+.header_content button a{
   color: rgb(255, 255, 255);
   font-size: 14px;
   font-weight: 400;
@@ -57,6 +57,7 @@ header{
   background: rgb(35, 43, 53);
 }
 
+
 .mail{
   color: rgb(255, 255, 255);
   font-size: 14px;
@@ -65,11 +66,37 @@ header{
   letter-spacing: 0.6px;
 }
 
-.nav Link{
+nav ul li a{
   color: rgb(255, 255, 255);
   font-size: 28px;
   font-weight: 400;
   line-height: 38px;
   letter-spacing: 0.2px;
   text-align: left;
+}
+.burger_menu_img h2{
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 101px;
+  letter-spacing: 0.6px;
+  text-align: center;;
+
+}
+
+.menu_button a{
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: -1px;
+  letter-spacing: 0.4px;
+  text-align: left;
+}
+
+.burger_menu_img{
+    background:url("/images/menu_bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 688px;
+    height: 100%;
 }

@@ -13,10 +13,10 @@ const Menu = () => {
           <div onClick={toggleMenu} className="menu_button  flex items-center gap-2">
               <Image src="/icons/burgerButton.svg" width={26} height={18} alt="menu"
                      className=" cursor-pointer pt-[5px]"/>
-              <a href="#" className="font-gilroy">MENU</a>
+              <a className=" cursor-pointer font-gilroy">MENU</a>
           </div>
           {isOpen && (
-              <div className="burger_menu flex justify-between h-full w-full fixed left-0 top-0">
+              <div className="burger_menu flex justify-between  h-full w-full fixed left-0 top-0">
                   <div className="flex flex-col justify justify-between items-cneter p-[6%] border-r-white">
                       <div
                           onClick={toggleMenu}
@@ -49,38 +49,38 @@ const Menu = () => {
                           </div>
                       </div>
                   </div>
-                  <div className="nav">
+                  <div className="nav py-[6%] w-96 ">
                       <div className="logo flex justify-end">
                           <Image src="/icons/menuLogo.svg" width={56} height={60} alt="logo"/>
                       </div>
                       <nav>
-                          <ul className="flex flex-col items-center justify-center gap-[52px]">
+                          <ul className="flex flex-col items-start justify-start gap-[52px]">
                               <li>
-                                  <Link href="#">HOME</Link>
+                                  <Link className="font-abrilfatface" href="#">HOME</Link>
                               </li>
                               <li>
-                                  <Link href="#">ABOUT US</Link>
+                                  <Link className="font-abrilfatface" href="#">ABOUT US</Link>
                               </li>
                               <li>
-                                  <Link href="#">MELBOURNE CUP</Link>
+                                  <Link className="font-abrilfatface" href="#">MELBOURNE CUP</Link>
                               </li>
                               <li>
-                                  <Link href="#">MENU</Link>
+                                  <Link className="font-abrilfatface" href="#">MENU</Link>
                               </li>
                               <li>
-                                  <Link href="#">FUNCTIONS & WHAT’S ON</Link>
+                                  <Link className="font-abrilfatface" href="#">FUNCTIONS & WHAT’S ON</Link>
                               </li>
                               <li>
-                                  <Link href="#">BOOK NOW</Link>
+                                  <Link className="font-abrilfatface" href="#">BOOK NOW</Link>
                               </li>
                               <li>
-                                  <Link href="#">CONTACT US</Link>
+                                  <Link className="font-abrilfatface" href="#">CONTACT US</Link>
                               </li>
                           </ul>
                       </nav>
                   </div>
-                  <div className="burger_menu_img">
-                      <Image src="/images/menu.jpeg" width={100} height={100} alt="logo"/>
+                  <div className="burger_menu_img flex items-end justify-center py-[6%] w-[690px] ">
+                          <h2 className="font-balestya">Victoria’s <br/> Darlinghurst</h2>
                   </div>
               </div>
           )};
