@@ -10,7 +10,7 @@ const Menu = () => {
     }
   return (
       <>
-          <div onClick={toggleMenu} className="menu_button  flex items-center gap-2">
+          <div onClick={toggleMenu} className="menu_button flex items-center gap-2">
               <Image src="/icons/burgerButton.svg" width={26} height={18} alt="menu"
                      className=" cursor-pointer pt-[5px]"/>
               <a className=" cursor-pointer font-gilroy">MENU</a>
@@ -31,16 +31,14 @@ const Menu = () => {
                           </a>
                       </div>
                       <div className="social_media gap-6 flex flex-col">
-                          <div
-                              className="facebook_icon rounded-full w-[60px] h-[60px]  border border-white flex items-center justify-center">
+                          <div className="facebook_icon rounded-full w-[60px] h-[60px] cursor-pointer  border border-white flex items-center justify-center">
                               <Image
                                   src="/icons/facebook.svg"
                                   alt="facebook_logo"
                                   width={30}
                                   height={30}/>
                           </div>
-                          <div
-                              className="instagram_icon rounded-full w-[60px] h-[60px]  border border-white flex items-center justify-center">
+                          <div className="instagram_icon rounded-full w-[60px] h-[60px] cursor-pointer  border border-white flex items-center justify-center">
                               <Image
                                   src="/icons/menu_instagram.svg"
                                   alt="instagram_logo"
