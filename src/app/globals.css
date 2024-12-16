@@ -44,7 +44,9 @@ ul li a:hover{
   color: rgb(243, 156, 18);
 }
 
-
+main{
+  background: rgb(14, 19, 23);
+}
 
 .main_content h2{
   color: rgb(243, 156, 18);
@@ -218,4 +220,239 @@ nav ul li a{
 .middle_content button:hover{
   transform: scale(1,1);
   box-shadow: 0 0 8px rgb(243, 156, 18);
+}
+
+.menu_img a{
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 54px;
+  letter-spacing: 0.6px;
+  text-align: left;
+}
+
+.menu_img_content:nth-child(2){
+  background: url("/images/menu-2.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.menu_img_content:nth-child(3){
+  background: url("/images/menu-3.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.menu_wrapper{
+  background: rgb(22, 27, 33);
+}
+
+
+
+
+.menu_about_card h2{
+  color: rgb(243, 156, 18);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+
+.menu_about_card p{
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+
+.menu_about_card button:hover{
+  background: rgb(243, 156, 18);
+  color: white;
+  border: 1px solid rgb(243, 156, 18);
+  transform: scale(1,1);
+}
+.menu_about_card button{
+  background: transparent;
+  border: 1px solid rgb(243, 156, 18);
+  border-radius: 9999px;
+  font-size: 24px;
+  color: rgb(243, 156, 18);
+  transition: 0.3s ease;
+}
+
+.about_card_text{
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+
+.menu_about_card:nth-child(1),
+.menu_about_card:nth-child(3){
+  border-bottom: 1px solid rgb(243, 156, 18);
+  border-right: 1px solid rgb(243, 156, 18);
+  border-left: 1px solid rgb(243, 156, 18);
+  border-top: 1px solid transparent;
+}
+
+
+
+.menu_about_card:nth-child(2),
+.menu_about_card:nth-child(4){
+  border-top: 1px solid rgb(243, 156, 18);
+  border-right: 1px solid rgb(243, 156, 18);
+  border-left: 1px solid rgb(243, 156, 18);
+  border-bottom: 1px solid transparent;
+}
+
+.video_container{
+  position: relative;
+  width: 100%;
+  background: rgb(14, 19, 23);
+  padding-top: 55%;
+}
+
+.video_container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+.section_blogs_content p{
+  color: rgb(243, 156, 18);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 55px;
+  letter-spacing: 0.6px;
+  text-align: left;
+}
+
+.section_blogs_content h2 {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 67px;
+  letter-spacing: 0.6px;
+  text-align: left;
+}
+.blogs_card{
+  background: rgb(22, 27, 33);
+  position: relative;
+  padding-bottom: 36px;
+}
+.blogs_card h2{
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  text-align: left;
+  margin-top: 22px;
+  line-height: 1;
+}
+.blogs_card p{
+  color: rgb(193, 153, 118);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  text-align: left;
+  margin-top: 9px;
+  line-height:3;
+}
+.blogs_card a{
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.6px;
+  text-align: left;
+  margin-top: 16px;
+}
+.blogs_card span{
+  color: rgb(193, 153, 118);
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  cursor: pointer;
+}
+
+.reservation{
+  background: rgb(22, 27, 33);
+  transition: 0.3s ease;
+}
+
+.reservation h1{
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: white;
+}
+
+.reservation h1 span {
+  color: rgb(243, 156, 18);
+}
+
+.reservation input {
+  background: transparent;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: -1px;
+  letter-spacing: 0.6px;
+  text-align: left;
+  outline: none;
+}
+.reservation input:hover {
+  border-bottom: 1px solid rgb(243, 156, 18);
+}
+
+.reservation_info input{
+  width: 418px;
+}
+.reservation_info2 input{
+  width: 277px;
+}
+
+.reservation input::placeholder{
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: -1px;
+  letter-spacing: 0.6px;
+  text-align: left;
+  outline: none;
+}
+
+.reservation button{
+  padding: 20px 59px;
+  border-radius: 29px;
+  background: rgb(243, 156, 18);
+
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: -1px;
+  letter-spacing: 0.4px;
+  text-align: left;
+  transition: 0.3s ease;
+}
+
+.reservation button:hover{
+  box-shadow: 0 0 10px rgb(243, 156, 18);
+  transform: scale(1,1);
 }
