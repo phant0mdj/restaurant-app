@@ -2,9 +2,10 @@ import Menu from "@/components/Menu";
 import Link from "next/link";
 
 const Header = () => {
+
   return (
       <>
-          <header className="w-[100%]">
+          <header className="w-full">
               <div className="main_content_container pt-8 pb-[370px] mx-auto max-w-[1200px]">
                   <div className="header_content flex items-center justify-between">
                       <Menu/>

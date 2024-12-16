@@ -1,9 +1,54 @@
 "use client"
-
+import supabase from "@/lib/supabaseClient";
 import Image from "next/image";
 import Link from "next/link";
+import {useState} from "react";
 
 const Main = () => {
+    const [reservation, setReservation] = useState({
+        fullName:"",
+        phoneNumber: "",
+        numberOfPeople: "",
+        date: "",
+    })
+    const handleChange = (e) => {
+        const {name, value} = e.target;
+        setReservation((prev) => ({...prev, [name]: value}));
+    };
+    const handleSubmit = async () => {
+        const {fullName, phoneNumber, numberOfPeople, date} = reservation;
+
+        if (!fullName || !phoneNumber || !numberOfPeople || !date) {
+            alert("Fill out all required fields")
+            return
+        }
+        try {
+            const {error} = await supabase
+                .from("reservation")
+                .insert([{
+                    full_name: fullName,
+                    phone_number: phoneNumber,
+                    number_of_people: numberOfPeople,
+                    date: date
+                }]);
+            if (error) {
+                console.error("Error inserting data", error);
+            } else {
+                alert("Reservation successfully made!")
+                setReservation({
+                    fullName:"",
+                    phoneNumber: "",
+                    numberOfPeople: "",
+                    date: "",
+                })
+            }
+        } catch (error) {
+            console.error("Unexpected error", error);
+            alert("An unexpected error occurred, please try again later.");
+        }
+    };
+
+
   return (
       <>
           <main>
@@ -134,7 +179,7 @@ const Main = () => {
               <div className="section_blogs">
                   <div
                       className="section_blogs_content flex flex-col items-center max-w-[1200px] mx-auto pt-32 flex-wrap">
-                      <p className="font-balestya">Our Lateste News</p>
+                      <p className="font-balestya">Our Latest News</p>
                       <h2 className="font-abrilfatface mt-3">Check Our Blogs</h2>
                       <div className="blogs_content flex gap-6 mt-14">
                           <div className="blogs_card">
@@ -164,20 +209,20 @@ const Main = () => {
                       </div>
                   </div>
               </div>
-              <div className="reservation_wrapper bg-full">
-                  <div className="reservation max-w-[1200px] mx-auto flex flex-col items-center mt-[7rem] pt-[51px]">
+              <div className="reservation_wrapper bg-full pb-20">
+                  <div className="reservation max-w-[1200px] mx-auto flex flex-col items-center mt-[7rem] pt-[51px] pb-11 ">
                       <h1 className="font-abrilfatface">Make A <span className="font-abrilfatface">Reservation</span>
                       </h1>
                       <div className="reservation_info flex justify-between items-center mt-11 gap-11">
-                          <input type="text" placeholder="Full Name*"/>
-                          <input type="number" placeholder="Phone Number*"/>
+                          <input type="text" name="fullName" value={reservation.fullName} onChange={handleChange} placeholder="Full Name*"/>
+                          <input type="number" name="phoneNumber" value={reservation.phoneNumber} onChange={handleChange}  placeholder="Phone Number*"/>
                       </div>
                       <div className="reservation_info2 flex justify-between items-center mt-9 gap-7">
-                          <input type="number" placeholder="Number of People*"/>
-                          <input type="date" placeholder="Pick a date"/>
-                          <input type="time" placeholder="Pack time"/>
+                          <input type="number" name="numberOfPeople" value={reservation.numberOfPeople} onChange={handleChange}  placeholder="Number of People*"/>
+                          <input type="date" name="date" value={reservation.date} onChange={handleChange}  placeholder="Pick a date"/>
+                          <input type="time" name="time" placeholder="Pack time"/>
                       </div>
-                      <button className="font-gilroy mt-11">BOOK A TABLE</button>
+                      <button className="font-gilroy mt-11" onClick={handleSubmit}>BOOK A TABLE</button>
                   </div>
               </div>
           </main>

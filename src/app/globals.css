@@ -416,6 +416,7 @@ nav ul li a{
   letter-spacing: 0.6px;
   text-align: left;
   outline: none;
+  height: 52px;
 }
 .reservation input:hover {
   border-bottom: 1px solid rgb(243, 156, 18);
@@ -438,6 +439,7 @@ nav ul li a{
   outline: none;
 }
 
+
 .reservation button{
   padding: 20px 59px;
   border-radius: 29px;
@@ -455,4 +457,60 @@ nav ul li a{
 .reservation button:hover{
   box-shadow: 0 0 10px rgb(243, 156, 18);
   transform: scale(1,1);
+}
+
+
+
+footer{
+  background: linear-gradient(180.00deg, rgba(14, 19, 23, 0) -42.448%,rgb(14, 19, 23) 94.994%), url("/images/footer_bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+footer ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_content ul li{
+  display: flex;
+  gap: 10px;
+}
+footer ul li a{
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: -1px;
+  letter-spacing: 0.6px;
+  text-align: left;
+}
+
+.footer_content h2{
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: -1px;
+  letter-spacing: 0.6px;
+  text-align: left;
+}
+
+footer .middle_content h2{
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 67px;
+  letter-spacing: 0.6px;
+  text-align: left;
+}
+
+.working_hours p{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: -1px;
+  letter-spacing: 0.6px;
+  text-align: right;
+  color: white;
+}
+
+.working_hours span{
+  color: rgb(243, 156, 18);
 }
